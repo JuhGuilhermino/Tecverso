@@ -1,0 +1,63 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+
+nav a img {
+    height: 28px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+#home, #t1, #t2 {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    border-radius: 50px;
+    background: #E34234;
+}
+
+h1 {
+    height: 35px;
+    width: 180px;
+    color: white;
+    font-family: 'Gemunu Libre';
+    font-weight:500;
+    font-size: 28px;
+    border-width: 300;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: #E34234;
+}
+
+#line {
+    background-color:#000;
+    height: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+
+}
+
+footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #000;
+    border-bottom: solid 10px #d3584d;
+}

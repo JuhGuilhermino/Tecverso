@@ -1,0 +1,65 @@
+<section id="apresentacao">
+    <div class="box-apresentacao">
+        <img class="ada-oi" src="/assets/ada-oi2.png">
+        <div id="tela-chat">
+            <img id="logo-chat" src="/assets/MineAdaPink.png">
+            <div id="chat-p1" *ngIf="chat1">
+                <p class="fala-ada">Oi meu nome é Ada. Seja bem vinda ao Tecverso!</p>
+                <p class="fala-ada">Preparada para iniciar a exploração?</p>
+                <p class="fala-user" id="rep1-1" *ngIf="resp1A">Não sei por onde começar</p>
+                <p class="fala-ada" id="resp1-cont1" *ngIf="resp1A">Não se preocupe. Serei sua guia nesse novo universo. Sempre que aparecer na tela significa que tem alguma informação importante.</p>
+                <p class="fala-user" id="rep1-2" *ngIf="resp1B">Etou super empolgada!</p>
+                <p class="fala-ada" id="resp1-cont2" *ngIf="resp1B">Esse é o espírito! Aqui nesse universo serei sua guia. Sempre aparecerei com alguma informação importante.</p>
+            </div>
+            <div id="chat-p2" *ngIf="chat2">
+                <p class="fala-ada" id="fala-ada-grande">Por onde vocÊ quer começar?<br><br>1) O que é informática e o que forma esse universo<br>2) Como ciência e criatividade se relacionam e podem ajudar no desenvolvimento de projetos<br>3) Quais são as áreas da informática<br>4) Quem são as mulheres que contribuíram/ contribuem o desenvolvimento da tecnologia</p>
+                <p class="fala-user" *ngIf="resp2A">A área da informatica parece legal.</p>
+                <p class="fala-ada" *ngIf="resp2A">Ela está cada vez mais perto da gente. E aprender sobre pode nos ajudar inclusive no dia a dia.</p>
+                <p class="fala-user" *ngIf="resp2B">Quero desenvolver meus próprios projetos.</p>
+                <p class="fala-ada" *ngIf="resp2B">Tenho certeza que a ciência e a criatividade vão te ajudar nesse processo!</p>
+                <p class="fala-user" *ngIf="resp2C">Existem mais áreas dentro da informática?></p>
+                <p class="fala-ada" *ngIf="resp2C">Sim! Tem várias possibilidades de estudo e trabalho para explorar.</p>
+                <p class="fala-user" *ngIf="resp2D">Quero conhecer mulheres inspiradoras.</p>
+                <p class="fala-ada" *ngIf="resp2D">Apresentarei você a todas elas durante a jornada!</p>
+            </div>
+            <div id="chat-p3" *ngIf="chat3">
+                <p class="fala-ada">Por aqui, todas nos chamamos de buliçosas!</p>
+                <p class="fala-user" *ngIf="resp3A">Oi?</p>
+                <p class="fala-user" *ngIf="resp3B">Buli de chá?</p>
+                <p class="fala-user" *ngIf="resp3C">Quero ser uma buliçosa também!</p>
+                <p class="fala-ada" *ngIf="resp3D">Buliçosa é uma pavra do nordeste brasileiro que significa menina curiosa, que mexe em tudo. Esse é o espírito da nossa aventura!</p>
+                <p class="fala-ada" *ngIf="resp3D">Vamos começar?</p>
+                <p class="fala-user" *ngIf="resp3E">Já estou na nave!</p>
+                <p class="fala-user" *ngIf="resp3F">Só se for agora!</p>
+                <p class="fala-ada" *ngIf="resp3G">Vá para o mapa e decida por onde vamos começar.</p>
+            </div>
+            <div id="interacao">
+                <div class="resp-box" *ngIf="resp1">
+                    <p class="a">Escolha sua resposta:</p>
+                    <input type="button" class="resp" value="Não sei por onde começar" (click)="exibirResp1A()">
+                    <input type="button" class="resp" value="Estou super empolgada" (click)="exibirResp1B()">
+                </div>
+                <div class="resp-box" *ngIf="resp2">
+                    <p class="a">Escolha sua resposta:</p>
+                    <input type="button" class="resp" value="1" (click)="exibirResp2A()">
+                    <input type="button" class="resp" value="2" (click)="exibirResp2B()">
+                    <input type="button" class="resp" value="3" (click)="exibirResp2C()">
+                    <input type="button" class="resp" value="4" (click)="exibirResp2D()">
+                </div>
+                <div class="resp-box" *ngIf="resp3">
+                    <p class="a">Escolha sua resposta:</p>
+                    <input type="button" class="resp" value="Oi?" (click)="exibirResp3A()">
+                    <input type="button" class="resp" value="Buli de chá?" (click)="exibirResp3B()">
+                    <input type="button" class="resp" value="Quero ser uma buliçosa também!" (click)="exibirResp3C()">
+                </div>
+                <div class="resp-box" *ngIf="resp4">
+                    <p class="a">Escolha sua resposta:</p>
+                    <input type="button" class="resp" value="Só se for agora!" (click)="exibirResp3E()">
+                    <input type="button" class="resp" value="Já estou na nave!" (click)="exibirResp3F()">
+                </div>
+                <input type="button" class="proximo" value="Próximo" (click)="mudarParaChat2()" *ngIf="bnt1">
+                <input type="button" class="proximo" value="Próximo" (click)="mudarParaChat3()" *ngIf="bnt2">
+            </div>
+        </div>
+    </div>
+</section>

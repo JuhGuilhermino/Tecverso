@@ -1,0 +1,94 @@
+#capa {
+    height: 100vh;
+    width: 100%;
+    background: url("/assets/fundo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#postion-capa {
+    height: 90vh;
+    width: 90vw;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "a b c"
+        "d e f";
+}
+
+#estrela1 {position: absolute; top: 15vh; left: 10vw; height: 4vh;}
+#estrela2 {position: absolute; top: 30vh; left: 5vw; height: 4vh;}
+#estrela3 {position: absolute; top: 43vh; left: 12vw; height: 4vh;}
+#estrela4 {position: absolute; top: 90vh; left: 5vw; height: 4vh;}
+#estrela5 {position: absolute; top: 10vh; left: 25vw; height: 4vh;}
+#estrela6 {position: absolute; top: 35vh; left: 40vw; height: 4vh;}
+#estrela7 {position: absolute; top: 80vh; left: 12vw; height: 4vh;}
+#estrela8 {position: absolute; top: 90vh; left: 50vw; height: 4vh;}
+#estrela9 {position: absolute; top: 15vh; left: 60vw; height: 4vh;}
+#estrela10 {position: absolute; top: 30vh; left: 90vw; height: 4vh;}
+#estrela11 {position: absolute; top: 43vh; left: 70vw; height: 4vh;}
+#estrela12 {position: absolute; top: 90vh; left: 66vw; height: 4vh;}
+#estrela13 {position: absolute; top: 20vh; left: 12vw; height: 4vh;}
+#estrela14 {position: absolute; top: 40vh; left: 50vw; height: 4vh;}
+#estrela15 {position: absolute; top: 75vh; left: 60vw; height: 4vh;}
+#estrela16 {position: absolute; top: 40vh; left: 90vw; height: 4vh;}
+#estrela17 {position: absolute; top: 33vh; left: 70vw; height: 4vh;}
+#estrela18 {position: absolute; top: 20vh; left: 66vw; height: 4vh;}
+
+#planeta-rosa { 
+    height: 25vh; 
+    grid-area: c; 
+    justify-self: center; 
+    align-self: center;
+}
+
+#lua { 
+    height: 12vh; 
+    grid-area: b;
+}
+
+#planeta-azul {
+    height: 35vh; 
+    grid-area: f;
+    justify-self: center;
+}
+
+#planeta-amarelo { 
+    height: 35vh; 
+    grid-area: a;
+    justify-self: center;
+}
+
+#planeta-rosinha {
+    height: 20vh;
+    grid-area: e;
+    justify-self: center;
+    align-self: baseline;
+}
+
+#container-titulo {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:baseline;
+    margin-left: 3vw;
+}
+
+#titulo-capa {
+    color: white;
+    font-family: 'Gemunu Libre';
+    font-weight:800;
+    font-size: 85px;
+}
+
+#subtitulo-capa {
+    color: white;
+    font-family: 'Source Code Pro';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    color: #E34234;
+}

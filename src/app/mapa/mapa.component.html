@@ -1,0 +1,69 @@
+<section id="mapa">
+    <div id="tela-mapa">
+        <div id="box-menu-mapa" *ngIf="menu">
+            <h1 class="titulo-mapa">Mapa da Galáxia</h1>
+            <h2 id="registro">REGISTRO: 06 - 11 -2022</h2>
+            <h2 class="subtitulo-mapa">Clique nos planetas e explore as trilhas</h2>
+            <input type="image" src="/assets/planeta-rosinha.png" id="bnt-p1" (click)="mudarParaMapa1()">
+            <input type="image" src="/assets/planeta-amarelo.png" id="bnt-p2" (click)="mudarParaMapa2()">
+            <input type="image" src="/assets/planeta-rosa.png" id="bnt-p3" (click)="mudarParaMapa3()">
+            <input type="image" src="/assets/planeta-azul.png" id="bnt-p4" (click)="mudarParaMapa4()">
+        </div>
+        <div id="box-mapa1" *ngIf="mapa1">
+            <h1 class="titulo-mapa">Hopper-1944</h1>
+            <img class="img-mapa" src="/assets/mapa-rosinha.png">
+            <div class="mapa-pinos">
+                <img id="m1-pino1" src="/assets/pino.png">
+                <div id="m1-tag1" *ngIF="tag1">
+                    <h3 class="titulo-tag">Nome do Artigo</h3>
+                    <p class="texto-tag">Resumo do artigo em no máximo duas frases.</p>
+                    <input class="bnt-tag" type="button" value="Explorar">
+                </div>
+            </div>
+            <div class="mini-menu-mapa">
+                <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
+                <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
+                <input type="image" src="/assets/planeta-rosa.png" id="bnt-mine-p3" (click)="mudarParaMapa3()">
+                <input type="image" src="/assets/planeta-azul.png" id="bnt-mine-p4" (click)="mudarParaMapa4()">
+            </div>
+        </div>
+        <div id="box-mapa2" *ngIf="mapa2">
+            <h1 class="titulo-mapa"></h1>
+            <img class="img-mapa" src="/assets/mapa-amarelo.png">
+            <div class="mini-menu-mapa">
+                <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
+                <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
+                <input type="image" src="/assets/planeta-rosa.png" id="bnt-mine-p3" (click)="mudarParaMapa3()">
+                <input type="image" src="/assets/planeta-azul.png" id="bnt-mine-p4" (click)="mudarParaMapa4()">
+            </div>
+        </div>
+        <div id="box-mapa3" *ngIf="mapa3">
+            <h1 class="titulo-mapa">Nome do Planeta</h1>
+            <img class="img-mapa" src="/assets/mapa-rosa.png">
+            <div class="mini-menu-mapa">
+                <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
+                <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
+                <input type="image" src="/assets/planeta-rosa.png" id="bnt-mine-p3" (click)="mudarParaMapa3()">
+                <input type="image" src="/assets/planeta-azul.png" id="bnt-mine-p4" (click)="mudarParaMapa4()">
+            </div>
+        </div>
+        <div id="box-mapa4" *ngIf="mapa4">
+            <h1 class="titulo-mapa">Nome do Planeta</h1>
+            <img class="img-mapa" src="/assets/mapa-azul.png">
+            <div class="mini-menu-mapa">
+                <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
+                <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
+                <input type="image" src="/assets/planeta-rosa.png" id="bnt-mine-p3" (click)="mudarParaMapa3()">
+                <input type="image" src="/assets/planeta-azul.png" id="bnt-mine-p4" (click)="mudarParaMapa4()">
+            </div>
+        </div>
+    </div>
+    <div id="legenda-mapa">
+        <img src="/assets/Ada Normal.png">
+        <p id="legenda-menu" *ngIf="menu"></p>
+        <p id="legenda-menu-mapa1" *ngIf="mapa1">REGISTRO: 9-12-1906  HOMENAGEM: Grace Hopper, almirante e analista de sistema da Marinha dos EUA <br> SOBRE: Primeiros passos no mundo da informática. O que é? Como começou? O que faz?</p>
+        <p id="legenda-menu-mapa2" *ngIf="mapa2">REGISTRO: xx - xx - xxxx     HOMENAGEM: Juliana Estradioto, e <br>Relação entre ciência e criatividade aliada ao desenvolvimento de projetos.</p>
+        <p id="legenda-menu-mapa3" *ngIf="mapa3">REGISTRO: xx - xx - xxxx     DESCOBRIDORA: xx - xx - xx <br>A área da informática é muito diversa. Descubra diferentes caminhos para seguir nesse universo.</p>
+        <p id="legenda-menu-mapa4" *ngIf="mapa4">REGISTRO: xx - xx - xxxx     DESCOBRIDORA: xx - xx - xx <br>Buliçosas inspiradoras. Quem são as mulheres que fazem parte da história da informática?</p>
+    </div>      
+</section>

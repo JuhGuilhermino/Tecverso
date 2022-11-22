@@ -1,0 +1,330 @@
+#sobre, #sobre2, #sobre3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/fundo-inverso.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+#sobre2 {
+    background-image: url("/assets/fundo.png");
+    justify-content: center;
+}
+
+#ceu {
+    height: 30vh;
+    width: 100%;
+    margin-top: 8vh;
+}
+
+#planeta-rosa2{
+    height: 15vh;
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+}
+
+#planeta-rosinha2{
+    height: 15vh;
+    position: relative;
+    top: 25vh;
+    left: 70vw;
+}
+
+#planeta-azul2{
+    height: 15vh;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+} 
+
+#planeta-amarelo2{
+    height: 18vh;
+    position: relative;
+    top: 8vh;
+    left: 40vw;
+}
+
+#lua2 {
+    height: 10vh;
+    position: relative;
+    left: 40vw;
+}
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10{height: 3vh;}
+#s11, #s12, #s13, #s14, #s15, #s16, #s17{height: 4vh;}
+
+#s1{
+    position: relative;
+    top: -10vh;
+    left: 10vw;
+}
+
+#s2{
+    position: relative;
+    top: -20vh;
+    left: 30vw;
+}
+
+#s3{
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+}
+
+#s4{
+    position: relative;
+    top: 25vh;
+    left: -1vw;
+}
+
+#s5{
+    position: relative;
+    top: 4vh;
+    left: 40vw;
+}
+
+#s6{
+    position: relative;
+    top: -4vh;
+    left: 55vw;
+}
+
+#s7{
+    position: relative;
+    top: -15vh;
+    left: 75vw;
+}
+
+#s8{
+    position: relative;
+    top: -5vh;
+    left: 85vw;
+}
+
+#s9{
+    position: relative;
+    top: 30vh;
+    left: 75vw;
+}
+
+#s10{
+    position: relative;
+    top: 40vh;
+    left: 80vw;
+}
+
+#s11{
+    position: relative;
+    top: 5vh;
+    left: 1vw;
+}
+
+#s12{
+    position: relative;
+    top: 45vh;
+    right: 10vw;
+}
+
+#s13{
+    position: relative;
+    top: -5vh;
+    left: 15vw;
+}
+
+#s14{
+    position: relative;
+    top: -15vh;
+    left: 35vw;
+}
+
+#s15{
+    position: relative;
+    top: 8vh;
+    left: 55vw;
+}
+
+#s16{
+    position: relative;
+    top: 18vh;
+    left: 70vw;
+}
+
+#s17{
+    position: relative;
+    top: 5vh;
+    right: 25vw;
+}
+
+.titulo-sobre {
+    font-family: 'Gemunu Libre';
+    font-size: 60px;
+    font-weight: 800;
+    color: #f6f4f2;
+    width: 70vw;
+    text-align: center;
+}
+
+#subtitulo-sobre {
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: #E34234;
+    text-align: center;
+    width: 70vw;
+}
+
+#texto-sobre {
+    font-family: 'Source Code Pro';
+    font-size: 18px;
+    font-weight: 300;
+    color: #f6f4f2;
+    text-align: center;
+    margin-top: 15px;
+    width: 70vw;
+}
+
+#saiba-mais {
+    font-family: 'Gemunu Libre';
+    font-size: 18px;
+    font-weight: 300;
+    color: #f6f4f2;
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#saiba-mais:hover {
+    background-color: #E34234;
+    cursor: pointer;
+}
+
+#linha-do-tempo {
+    align-self: center;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.partes {
+    width: 20vw;
+    margin-left: -1px;
+}
+
+.titulo-parte{
+    font-family: 'Gemunu Libre';
+    font-size: 26px;
+    font-weight: 800;
+    color: #E34234;
+    margin-left: 2vw;
+}
+
+.texto-parte{
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: 300;
+    color: #f6f4f2;
+    margin-left: 2vw;
+}
+
+.box-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.linha2{
+    height: 5px;
+    width: 12vw;
+    background: #D9D9D9;
+    margin-left: -1px;
+    grid-area: line;
+    align-self: center;
+}
+
+#tag1{
+    height: 4vw;
+    background-color: #E34234;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    grid-area: tag;
+    align-self: end;
+}
+
+.foto{
+    width: 14vw;
+    grid-area: img;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    margin-left: 2vw;
+    border-radius: 5px;
+}
+
+#sobre3{justify-content: center;}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-criadoras{
+    height: 60vh;
+    width: 25vw;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.box-nome{
+    font-family: 'Gemunu Libre';
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    background-color: #D9D9D9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50px;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-criadora{
+    height: 30vh;
+    width: 18vw;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin-top: 3vh;
+}
+
+.sobre-criadora{
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: 300;
+    color: #f6f4f2;
+    height: 10vh;
+    width: 21vw;
+    margin-top: 3vh;
+    text-align: justify;
+}

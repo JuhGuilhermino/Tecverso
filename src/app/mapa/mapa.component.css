@@ -1,0 +1,248 @@
+#mapa {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/fundo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela-mapa {
+    height: 75vh;
+    width: 75vw;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#box-menu-mapa {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3.5fr 0.5fr;
+    grid-template-areas:
+        "t t t t"
+        "p1 p2 p3 p4"
+        "s s s s";
+    align-items: center;
+    justify-items: center;
+}
+
+.titulo-mapa{
+    font-family: 'Gemunu Libre';
+    font-size: 45px;
+    font-weight: 400;
+    color: #f6f4f2;
+    grid-area: t;
+    margin-top: 30px;
+    margin-left: 40px;
+    align-self: baseline;
+    justify-self: baseline;
+}
+
+#registro {grid-area: t; align-self: end; justify-self: baseline;}
+.subtitulo-mapa {grid-area: s; align-self: end; justify-self: end;}
+.subtitulo-mapa, #registro {
+    width: 50vw;
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: 400;
+    color: #f6f4f2;
+    
+    margin-left: 40px;
+}
+
+#bnt-p1, #bnt-p2, #bnt-p3, #bnt-p4, #bnt-mine-p1, #bnt-mine-p2, #bnt-mine-p3, #bnt-mine-p4{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; 
+}
+
+#bnt-p1:hover, #bnt-p2:hover, #bnt-p3:hover, #bnt-p4:hover, #bnt-mine-p1:hover, #bnt-mine-p2:hover, #bnt-mine-p3:hover, #bnt-mine-p4:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: gray; 
+}
+
+#bnt-p1 {
+    height: 25vh;
+    background: transparent;
+    grid-area: p1;
+    align-self: center;
+    justify-self: end;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#bnt-p2 {
+    height: 40vh;
+    background: transparent;
+    grid-area: p2;
+    align-self:center;
+    justify-self: end;
+}
+
+#bnt-p3 {
+    height: 35vh;
+    background: transparent;
+    grid-area: p3;
+    align-self: center;
+    justify-self: baseline;
+}
+
+#bnt-p4 {
+    height: 25vh;
+    background: transparent;
+    grid-area: p4;
+    align-self: center;
+    justify-self: baseline;
+}
+
+#box-mapa1, #box-mapa2, #box-mapa3, #box-mapa4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-mapa {
+    height: 50vh;
+    margin-top: 1vh;
+}
+
+#mine-menu-mapa {
+    display: flex;
+    flex-direction: row;
+    height: 3vh;
+    width: 75vw;
+}
+
+#bnt-mine-p1 {
+    height: 8vh;
+    background: transparent;
+    padding: 18px;
+}
+
+#bnt-mine-p2 {
+    height: 13vh;
+    background: transparent;
+    align-self: end;
+}
+
+#bnt-mine-p3 {
+    height: 12vh;
+    background: transparent;
+    padding: 3px;
+}
+
+#bnt-mine-p4 {
+    height: 8.5vh;
+    background: transparent;
+    padding: 15px;
+}
+
+#legenda-mapa {
+    border: solid 2px #D9D9D9;
+    height: 60px;
+    width: 75vw;
+    text-align: justify;
+    grid-area: legenda;
+    background: #D9D9D9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-area: legenda;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#legenda-mapa img {
+    height: 40px;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#legenda-mapa p {
+    width: 65vw;
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    font-weight: 600;
+    color:#000000;
+}
+
+.mapa-pinos{
+    height: 50vh;
+    width: 75vw;
+    background: transparent;
+    position: absolute;
+    margin-top: 85px;
+}
+
+.titulo-tag{
+    font-family: 'Gemunu Libre';
+    font-size: 20px;
+    font-weight: 800;
+    color:#000000;
+}
+
+.texto-tag{
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    font-weight: 600;
+    color:#000000;
+    text-align: center;
+}
+
+.bnt-tag{
+    font-family: 'Gemunu Libre';
+    font-size: 14px;
+    font-weight: 700;
+    color:#000000;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px;
+    background: rgba(255, 77, 77, 0.6);
+}
+
+.bnt-tag:hover{
+    cursor: pointer;
+    background-color: #E34234;
+}
+
+#m1-pino1{
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
+
+    border: none;
+}
+
+#m1-pino1:hover{
+    cursor: pointer;
+}
+
+#m1-tag1{
+    top: -11vh;
+    left: 23vw;
+}
+
+#m1-tag1, #m1-tag2, #m1-tag3 {
+    height: 20vh;
+    width: 12vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    padding: 5PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid #000000 2px;
+    position: relative;
+}
+
