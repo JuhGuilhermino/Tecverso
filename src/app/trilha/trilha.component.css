@@ -1,161 +1,42 @@
 #capa {
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/fundo-inverso.png");
+    background-image: url("/assets/fundo.png");
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ada-capa {
+    height: 120vh;
+    margin-top: -20vh;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: 0px 30vh; /* try 20% 10% */ 
+}
+
+#box-titulo {
+    height: 35vh;
+    width: 50vw;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
 }
 
-
-#ceu {
-    height: 30vh;
-    width: 100%;
+#planeta-trilha{
+    height: 8vh;
 }
 
-#planeta-rosa2{
-    height: 20vh;
-    position: relative;
-    top: 25vh;
-    left: 5vw;
-}
-
-#planeta-rosinha2{
-    height: 20vh;
-    position: relative;
-    top: 25vh;
-    left: 65vw;
-}
-
-#planeta-azul2{
-    height: 20vh;
-    position: relative;
-    top: 5vh;
-    right: 10vw;
-} 
-
-#planeta-amarelo2{
-    height: 30vh;
-    position: relative;
-    top: 8vh;
-    left: 30vw;
-}
-
-#lua2 {
-    height: 15vh;
-    position: relative;
-    left: 35vw;
-}
-
-#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10{height: 3vh;}
-#s11, #s12, #s13, #s14, #s15, #s16, #s17{height: 4vh;}
-
-#s1{
-    position: relative;
-    top: -10vh;
-    left: 10vw;
-}
-
-#s2{
-    position: relative;
-    top: -20vh;
-    left: 30vw;
-}
-
-#s3{
-    position: relative;
-    top: 30vh;
-    left: 10vw;
-}
-
-#s4{
-    position: relative;
-    top: 25vh;
-    left: -1vw;
-}
-
-#s5{
-    position: relative;
-    top: 4vh;
-    left: 40vw;
-}
-
-#s6{
-    position: relative;
-    top: -4vh;
-    left: 55vw;
-}
-
-#s7{
-    position: relative;
-    top: -15vh;
-    left: 75vw;
-}
-
-#s8{
-    position: relative;
-    top: -5vh;
-    left: 85vw;
-}
-
-#s9{
-    position: relative;
-    top: 30vh;
-    left: 75vw;
-}
-
-#s10{
-    position: relative;
-    top: 40vh;
-    left: 80vw;
-}
-
-#s11{
-    position: relative;
-    top: 5vh;
-    left: 1vw;
-}
-
-#s12{
-    position: relative;
-    top: 45vh;
-    right: 10vw;
-}
-
-#s13{
-    position: relative;
-    top: -5vh;
-    left: 15vw;
-}
-
-#s14{
-    position: relative;
-    top: -15vh;
-    left: 35vw;
-}
-
-#s15{
-    position: relative;
-    top: 8vh;
-    left: 55vw;
-}
-
-#s16{
-    position: relative;
-    top: 18vh;
-    left: 70vw;
-}
-
-#s17{
-    position: relative;
-    top: 5vh;
-    right: 25vw;
-}
-
-.titulo-sobre {
+#titulo-artigo {
     font-family: 'Gemunu Libre';
     font-size: 70px;
     font-weight: 800;
@@ -163,11 +44,11 @@
     width: 50vw;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10vh;
+    margin-top: 15px;
     line-height: 50px;
 }
 
-#subtitulo-sobre {
+#subtitulo-artigo {
     font-family: 'Source Code Pro';
     font-size: 20px;
     font-style: italic;
@@ -175,5 +56,184 @@
     color: #E34234;
     text-align: center;
     width: 50vw;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+#conteudo {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/fundo-inverso.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela {
+    height: 80vh;
+    width: 75vw;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo {
+    height: 50px;
+    width: 75vw;
+    background: #D9D9D9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-tela {
+    font-family: 'Gemunu Libre';
+    font-size: 35px;
+    font-weight: 700;
+    color: #E34234;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+}
+
+#conteudo .tela .cont {
+    height: 75vh;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text img" "bnt img";
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-text {
+    grid-area: text;
+    width: 30vw;
+    height: 40vh;
+}
+
+.text {
+    font-family: 'Source Code Pro';
+    font-size: 18px;
+    font-weight: 300;
+    color: #f6f4f2;
+    text-align: justify;
+}
+
+.box-img {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    grid-area: img;
+    margin-left: 20px;
+}
+
+.img-art {
+    height: 55vh;
+    width: 30vw;
+    border: #D9D9D9 solid 2px;
+    border-radius: 10px;
+}
+
+.leg {
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    color: #f6f4f2;
+    text-align: justify;
+    width: 30vw;
+}
+
+.bnt {
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: 700;
+    color: #f6f4f2;
+    text-align: center;
+    grid-area: bnt;
+    width: 100px;
+    background-color: #12107D;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.bnt:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+    color: #12107D;
+}
+
+#mapa-mental {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/fundo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa-mental .tela .cont {
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#indicacoes {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/fundo-inverso.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#indicacoes .tela {border: #E34234 solid 2px;}
+#indicacoes .topo {background: #E34234;}
+#indicacoes .nome-tela {color: #f6f4f2;}
+
+#indicacoes .tela .cont {
+    height: 75vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ind-titulo {
+    font-family: 'Gemunu Libre';
+    font-size: 30px;
+    font-weight: 500;
+    color: #f6f4f2;
+    text-align: end;
+}
+
+.indicacao-texto, .indicacao-youtube {
+    height: 30vh;
+    width: 35vw;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #E34234;
 }
