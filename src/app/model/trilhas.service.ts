@@ -20,4 +20,5 @@ export class TrilhasService {
       `${this.URL}/${id}`
     )
   }
+  
 }
