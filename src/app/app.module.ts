@@ -9,6 +9,7 @@ import { DialogoComponent } from './dialogo/dialogo.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { TrilhaComponent } from './trilha/trilha.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TrilhaComponent } from './trilha/trilha.component';
     DialogoComponent,
     MapaComponent,
     SobreComponent,
-    TrilhaComponent
+    TrilhaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

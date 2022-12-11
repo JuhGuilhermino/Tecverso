@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Artigo } from '../model/artigo';
 import { TrilhasService } from '../model/trilhas.service';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-trilha',
@@ -11,15 +13,18 @@ export class TrilhaComponent implements OnInit {
   div1: boolean;
   div2:boolean;
   artig: Artigo;
+  id: any;
   
-  constructor(private t: TrilhasService) {
+  constructor(private t: TrilhasService, private ad: ActivatedRoute) {
     this.div1 = true;
     this.div2 = false;
     this.artig = new Artigo();
    }
 
+
   ngOnInit(): void {
-    this.exibirTrilha(1);
+    this.id = (this.ad.snapshot.paramMap.get('id'));
+    this.obterArtigo(this.id);
   }
 
   mostrarDiv2(){
@@ -32,11 +37,11 @@ export class TrilhaComponent implements OnInit {
     this.div2 = false;
   }
 
-  exibirTrilha(id: number): void {
+  obterArtigo(id: number): void {
     this.t.obterArtigo(id).subscribe((res) => {
       this.artig = res;
-      console.log(this.artig)
-    })
+      console.log(this.artig);
+    });
   }
 
 }

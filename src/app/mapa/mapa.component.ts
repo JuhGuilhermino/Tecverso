@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Artigo } from '../model/artigo';
+import { TrilhasService } from '../model/trilhas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mapa',
@@ -13,7 +16,7 @@ export class MapaComponent implements OnInit {
   mapa4: boolean;
   tag1: boolean;
 
-  constructor() { 
+  constructor(private ts: TrilhasService, private router: Router) { 
     this.menu = true;
     this.mapa1 = false;
     this.mapa2 = false;
@@ -22,8 +25,16 @@ export class MapaComponent implements OnInit {
     this.tag1 = true;
   }
 
-  ngOnInit(): void {
+  public todosArt = ["1", "2"];
+
+  onSelect(id:number){
+    let a = this.todosArt;
+    this.router.navigate(['/trilhas', a[id]]);
   }
+
+  ngOnInit(): void { 
+  }
+
 
   mudarParaMapa1(){
     this.menu = false;

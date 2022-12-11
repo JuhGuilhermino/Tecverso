@@ -10,15 +10,12 @@
             <input type="image" src="/assets/planeta-azul.png" id="bnt-p4" (click)="mudarParaMapa4()">
         </div>
         <div id="box-mapa1" *ngIf="mapa1">
-            <h1 class="titulo-mapa">Hopper-1944</h1>
+            <h1 class="titulo-mapa">Introdução à Informática</h1>
             <img class="img-mapa" src="/assets/mapa-rosinha.png">
             <div class="mapa-pinos">
-                <img id="m1-pino1" src="/assets/pino.png">
-                <div id="m1-tag1" *ngIF="tag1">
-                    <h3 class="titulo-tag">Nome do Artigo</h3>
-                    <p class="texto-tag">Resumo do artigo em no máximo duas frases.</p>
-                    <input class="bnt-tag" type="button" value="Explorar">
-                </div>
+                <a (click)="onSelect(1)">
+                    <img id="m1-pino1" src="/assets/pino.png">
+                </a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -28,7 +25,7 @@
             </div>
         </div>
         <div id="box-mapa2" *ngIf="mapa2">
-            <h1 class="titulo-mapa"></h1>
+            <h1 class="titulo-mapa">Jornada Criativa</h1>
             <img class="img-mapa" src="/assets/mapa-amarelo.png">
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -38,7 +35,7 @@
             </div>
         </div>
         <div id="box-mapa3" *ngIf="mapa3">
-            <h1 class="titulo-mapa">Nome do Planeta</h1>
+            <h1 class="titulo-mapa">Àreas de Informática</h1>
             <img class="img-mapa" src="/assets/mapa-rosa.png">
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -48,7 +45,7 @@
             </div>
         </div>
         <div id="box-mapa4" *ngIf="mapa4">
-            <h1 class="titulo-mapa">Nome do Planeta</h1>
+            <h1 class="titulo-mapa">Buliçosas inspiradoras</h1>
             <img class="img-mapa" src="/assets/mapa-azul.png">
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">

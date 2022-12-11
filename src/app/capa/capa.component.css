@@ -7,81 +7,27 @@
 }
 
 #postion-capa {
-    height: 90vh;
-    width: 90vw;
-    margin-top: 15vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "a b c"
-        "d e f";
-}
-
-#estrela1 {position: absolute; top: 15vh; left: 10vw; height: 4vh;}
-#estrela2 {position: absolute; top: 30vh; left: 5vw; height: 4vh;}
-#estrela3 {position: absolute; top: 43vh; left: 12vw; height: 4vh;}
-#estrela4 {position: absolute; top: 90vh; left: 5vw; height: 4vh;}
-#estrela5 {position: absolute; top: 10vh; left: 25vw; height: 4vh;}
-#estrela6 {position: absolute; top: 35vh; left: 40vw; height: 4vh;}
-#estrela7 {position: absolute; top: 80vh; left: 12vw; height: 4vh;}
-#estrela8 {position: absolute; top: 90vh; left: 50vw; height: 4vh;}
-#estrela9 {position: absolute; top: 15vh; left: 60vw; height: 4vh;}
-#estrela10 {position: absolute; top: 30vh; left: 90vw; height: 4vh;}
-#estrela11 {position: absolute; top: 43vh; left: 70vw; height: 4vh;}
-#estrela12 {position: absolute; top: 90vh; left: 66vw; height: 4vh;}
-#estrela13 {position: absolute; top: 20vh; left: 12vw; height: 4vh;}
-#estrela14 {position: absolute; top: 40vh; left: 50vw; height: 4vh;}
-#estrela15 {position: absolute; top: 75vh; left: 60vw; height: 4vh;}
-#estrela16 {position: absolute; top: 40vh; left: 90vw; height: 4vh;}
-#estrela17 {position: absolute; top: 33vh; left: 70vw; height: 4vh;}
-#estrela18 {position: absolute; top: 20vh; left: 66vw; height: 4vh;}
-
-#planeta-rosa { 
-    height: 25vh; 
-    grid-area: c; 
-    justify-self: center; 
-    align-self: center;
-}
-
-#lua { 
-    height: 12vh; 
-    grid-area: b;
-}
-
-#planeta-azul {
-    height: 35vh; 
-    grid-area: f;
-    justify-self: center;
-}
-
-#planeta-amarelo { 
-    height: 35vh; 
-    grid-area: a;
-    justify-self: center;
-}
-
-#planeta-rosinha {
-    height: 20vh;
-    grid-area: e;
-    justify-self: center;
-    align-self: baseline;
-}
-
-#container-titulo {
-    grid-area: d;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content:baseline;
-    margin-left: 3vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box-titulo {
+    margin-top: 20vh;
+    width: 40vw;
 }
 
 #titulo-capa {
     color: white;
     font-family: 'Gemunu Libre';
     font-weight:800;
-    font-size: 85px;
+    font-size: 100px;
+    text-align: center;
+    width: 40vw;
+    line-height: 0.8;
 }
 
 #subtitulo-capa {
@@ -90,5 +36,50 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 1;
-    color: #E34234;
+    color: #dd5649;
+    text-align: center;
+}
+
+
+#estrela1 {position: absolute; top: 15vh; left: 10vw; height: 3vh;}
+#estrela2 {position: absolute; top: 30vh; left: 5vw; height: 4vh;}
+#estrela3 {position: absolute; top: 43vh; left: 12vw; height: 3vh;}
+#estrela4 {position: absolute; top: 90vh; left: 10vw; height: 4vh;}
+#estrela5 {position: absolute; top: 10vh; left: 25vw; height: 3vh;}
+#estrela6 {position: absolute; top: 25vh; left: 40vw; height: 4vh;}
+#estrela7 {position: absolute; top: 15vh; left: 50vw; height: 3vh;}
+#estrela8 {position: absolute; top: 70vh; left: 30vw; height: 4vh;}
+#estrela9 {position: absolute; top: 25vh; left: 60vw; height: 4vh;}
+#estrela10 {position: absolute; top: 12vh; left: 90vw; height: 3vh;}
+#estrela11 {position: absolute; top: 90vh; left: 80vw; height: 4vh;}
+#estrela12 {position: absolute; top: 46vh; left: 70vw; height: 3vh;}
+#estrela13 {position: absolute; top: 40vh; left: 26vw; height: 4vh;}
+#estrela14 {position: absolute; top: 60vh; left: 50vw; height: 4vh;}
+#estrela15 {position: absolute; top: 70vh; left: 65vw; height: 3vh;}
+#estrela16 {position: absolute; top: 45vh; left: 90vw; height: 4vh;}
+#estrela17 {position: absolute; top: 33vh; left: 85vw; height: 3vh;}
+#estrela18 {position: absolute; top: 10vh; left: 68vw; height: 4vh;}
+#planeta-rosa {position: absolute; top: 18vh; left: 70vw;height: 25vh;}
+#lua {position: absolute; top: 20vh; left: 25vw; height: 15vh;}
+#planeta-azul {position: absolute; top: 50vh; left: 70vw;height: 32vh;}
+#planeta-amarelo {position: absolute; top: 40vh; left: 5vw;height: 40vh;}
+#planeta-rosinha {height: 30vh;}
+
+@media (max-width: 900px) {
+    #planeta-amarelo {height: 30vh; left: 3vw;}
+    #planeta-rosa {height: 20vh;}
+    #planeta-azul {height: 28vh;}
+    #lua {height: 10vh;}
+}
+
+@media (max-width: 600px) {
+    #planeta-amarelo {height: 20vh; left: 3vw;}
+    #planeta-rosa {height: 15vh;}
+    #planeta-rosinha {height: 25vh;}
+    #planeta-azul {height: 22vh;}
+    #lua {height: 8vh;}
+
+    #titulo-capa {font-size: 70px;}
+    
+    #subtitulo-capa {font-size: 20px;}
 }
