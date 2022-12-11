@@ -1,24 +1,22 @@
 <section id="capa">
     <img id="ada-capa" src="/assets/ada-capa-trilha.png">
     <div id="box-titulo">
-        <img id="planeta-trilha" src="/assets/planeta-rosinha.png">
-        <h1 id="titulo-artigo">{{artig.trilha}}</h1>
-        <h2 id="subtitulo-artigo">Frase que resuma o conteúdo do artigo</h2>
+        <img id="planeta-trilha" [src]="artig.planetaImg">
+        <h1 id="titulo-artigo">{{artig.titulo}}</h1>
+        <h2 id="subtitulo-artigo">{{artig.subtitulo}}</h2>
     </div>
 </section>
 <section id="conteudo">
     <div class="tela">
-        <div class="topo">
-            <h1 class="nome-tela"> {{artig.trilha}} | {{artig.titulo}} </h1>
-        </div>
+        <div class="topo"></div>
         <div class="cont" *ngIf="div1">
             <div class="box-text">
                 <p class="text"> {{artig.texto1}} </p>
             </div>
             <input class="bnt" type="button" value="PRÓXIMO" (click)="mostrarDiv2()">
             <div class="box-img">
-                <img class="img-art" src="" alt="">
-                <p class="leg">FONTE: de onde a imagem foi tirada.</p>
+                <img class="img-art" [src]="artig.img1">
+                <p class="leg">{{artig.leg1}}</p>
             </div>
         </div>
         <div class="cont" *ngIf="div2">
@@ -27,8 +25,8 @@
             </div>
             <input class="bnt" type="button" value="VOLTAR" (click)="mostrarDiv1()">
             <div class="box-img">
-                <img class="img-art" src="" alt="">
-                <p class="leg">FONTE: de onde a imagem foi tirada.</p>
+                <img class="img-art" [src]="artig.img2">
+                <p class="leg">{{artig.leg2}}</p>
             </div>
         </div>
     </div>
@@ -45,34 +43,35 @@
 </section>
 <section id="indicacoes">
     <div class="tela">
-        <h1 class="nome-tela">Ada Indica</h1>
-        <div class="indicacao-texto">
-            <div id="box-texto-img">
-                <img class="indicacao-texto-img" [src]="artig.iconTexto" alt="">
-            </div>
-            <h1 class="indicacao-texto-titulo"> {{artig.tituloTexto}} </h1>
-            <p class="indicacao-texto-descricao"> {{artig.descricaoTexto}} </p>
+        <div class="topo">
+            <h1 class="nome-tela">Ada Indica</h1>
         </div>
-        <div class="indicacao-youtube">
-            <div id="box-youtube-img">
-                <img class="indicacao-youtube-img" [src]="artig.iconYoutube" alt="">
+        <p class="ind-intro">A jornada esta apenas começando! Continue explorando esse assunto em outros universos.</p>
+        <div class="inds">
+            <div class="tag-ind">
+                <img class="ind-img" src="/assets/proj.png">
+                <h1 class="ind-titulo">{{artig.ind1Titulo}}</h1>
+                <p class="ind-desc">{{artig.ind1Desc}}</p>
+                <a class="bnt-ind" [href]="artig.ind1Link">ACESSAR</a>
             </div>
-            <h1 class="indicacao-youtube-titulo"> {{artig.tituloYoutube}} </h1>
-            <p class="indicacao-youtube-descricao"> {{artig.descricaoYoutube}} </p>
-        </div>
-        <div class="indicacao-podcast">
-            <div id="box-podcast-img">
-                <img class="indicacao-podcast-img" [src]="artig.iconPodcast" alt="">
+            <div class="tag-ind">
+                <img class="ind-img" src="/assets/proj.png">
+                <h1 class="ind-titulo">{{artig.ind2Titulo}}</h1>
+                <p class="ind-desc">{{artig.ind2Desc}}</p>
+                <a class="bnt-ind" [href]="artig.ind2Link">ACESSAR</a>
             </div>
-            <h1 class="indicacao-podcast-titulo"> {{artig.tituloPodcast}} </h1>
-            <p class="indicacao-podcast-descricao"> {{artig.descricaoPodcast}} </p>
-        </div>
-        <div class="indicacao-filme">
-            <div id="box-filme-img">
-                <img class="indicacao-filme-img" [src]="artig.iconFilme" alt="">
+            <div class="tag-ind">
+                <img class="ind-img" src="/assets/proj.png">
+                <h1 class="ind-titulo">{{artig.ind3Titulo}}</h1>
+                <p class="ind-desc">{{artig.ind3Desc}}</p>
+                <a class="bnt-ind" [href]="artig.ind3Link">ACESSAR</a>
             </div>
-            <h1 class="indicacao-filme-titulo"> {{artig.tituloFilme}} </h1>
-            <p class="indicacao-filme-descricao"> {{artig.descricaoFilme}} </p>
+            <div class="tag-ind">
+                <img class="ind-img" src="/assets/proj.png">
+                <h1 class="ind-titulo">{{artig.ind4Titulo}}</h1>
+                <p class="ind-desc">{{artig.ind4Desc}}</p>
+                <a class="bnt-ind" [href]="artig.ind4Link">ACESSAR</a>
+            </div>
         </div>
     </div>
 </section>

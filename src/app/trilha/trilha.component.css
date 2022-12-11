@@ -201,7 +201,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -209,9 +209,9 @@
 #indicacoes .tela {border: #E34234 solid 2px;}
 #indicacoes .topo {background: #E34234;}
 #indicacoes .nome-tela {color: #f6f4f2;}
-
-#indicacoes .tela .cont {
-    height: 75vh;
+.inds {
+    justify-items: center;
+    height: 51vh; 
     width: 70vw;
     display: flex;
     flex-direction: row;
@@ -219,21 +219,76 @@
     justify-content: space-around;
 }
 
-.ind-titulo {
-    font-family: 'Gemunu Libre';
-    font-size: 30px;
-    font-weight: 500;
+.ind-intro {
+    height: 14vh;
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    font-weight: 400;
     color: #f6f4f2;
-    text-align: end;
+    text-align: center;
+    width: 50vw;
+    font-style: italic;
+    margin-top: 8vh;
 }
 
-.indicacao-texto, .indicacao-youtube {
-    height: 30vh;
-    width: 35vw;
-    border-radius: 2px;
+.tag-ind {
+    background-color: transparent;
+    height: 50vh;
+    width: 16vw;
+    border-radius: 10px;
+    border: solid 2px #D9D9D9;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    background: #E34234;
+    margin-top: -10vh;
+}
+
+.ind-img {
+    grid-area: img; 
+    background-color: #D9D9D9;
+    align-self: center;
+    height: 90px;
+    border-radius: 100px;
+}
+
+.ind-titulo {
+    font-family: 'Gemunu Libre';
+    font-size: 26px;
+    font-weight: 600;
+    color: #f6f4f2;
+    text-align: justify;
+    text-transform: uppercase;
+    grid-area: h;
+}
+
+.ind-desc {
+    font-family: 'Source Code Pro';
+    font-size: 18px;
+    font-weight: 300;
+    color: #f6f4f2;
+    text-align: justify;
+    grid-area: t;
+}
+
+.bnt-ind {
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    font-weight: 500;
+    color: #f6f4f2;
+    text-align: center;
+    grid-area: b;
+    width: 65px;
+    background-color: #12107D;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: -7px;
+}
+
+.bnt-ind:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+    color: #12107D;
 }

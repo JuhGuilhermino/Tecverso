@@ -108,7 +108,27 @@
     align-items: center;
 }
 
-.img-mapa {
+#img-mapa1 {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 1vh;
+}
+
+#img-mapa2 {
+    width: 78vw;
+    height: 50vh;
+    margin-top: 1vh;
+}
+
+#img-mapa3 {
+    width: 85vw;
+    height: 50vh;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+
+#img-mapa4 {
+    width: 78vw;
     height: 50vh;
     margin-top: 1vh;
 }
@@ -214,17 +234,33 @@
     background-color: #E34234;
 }
 
-#m1-pino1{
-    position: absolute;
-    top: 7vh;
-    left: 20vw;
-    height: 40px;
-    border: none;
-}
+#m1-pino1, #m1-pino2, #m1-pino3, #m1-pino4, #m1-pino5, #m2-pino1, #m2-pino2, #m2-pino3, #m2-pino4, #m2-pino5, #m3-pino1, #m3-pino2, #m3-pino3, #m3-pino4, #m3-pino5,#m4-pino1, #m4-pino2, #m4-pino3, #m4-pino4, #m4-pino5{position: absolute; height: 40px; border: none;}
 
-#m1-pino1:hover{
-    cursor: pointer;
-}
+#m1-pino1{top: 7vh;left: 2vw;}
+#m1-pino2{top: 35vh;left: 10vw;}
+#m1-pino3{top: 22vh;left: 32vw;}
+#m1-pino4{top: 30vh;left: 45vw;}
+#m1-pino5{top: 15vh;left: 65vw;}
+
+#m2-pino1{top: 12vh;left: 2vw;}
+#m2-pino2{top: 36vh;left: 9vw;}
+#m2-pino3{top: 4vh;left: 32vw;}
+#m2-pino4{top: 30vh;left: 45vw;}
+#m2-pino5{top: 15vh;left: 65vw;}
+
+#m3-pino1{top: 20vh;left: 2vw;}
+#m3-pino2{top: 36vh;left: 23vw;}
+#m3-pino3{top: 10vh;left: 32vw;}
+#m3-pino4{top: 3vh;left: 50vw;}
+#m3-pino5{top: 15vh;left: 70vw;}
+
+#m4-pino1{top: 26vh;left: 2vw;}
+#m4-pino2{top: 36vh;left: 25vw;}
+#m4-pino3{top: 4vh;left: 34vw;}
+#m4-pino4{top: 25vh;left: 54vw;}
+#m4-pino5{top: 10vh;left: 68vw;}
+
+a:hover{cursor: pointer;}
 
 #m1-tag1{
     top: -11vh;

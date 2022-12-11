@@ -11,11 +11,13 @@
         </div>
         <div id="box-mapa1" *ngIf="mapa1">
             <h1 class="titulo-mapa">Introdução à Informática</h1>
-            <img class="img-mapa" src="/assets/mapa-rosinha.png">
+            <img id="img-mapa1" src="/assets/mapa-rosinha.png">
             <div class="mapa-pinos">
-                <a (click)="onSelect(1)">
-                    <img id="m1-pino1" src="/assets/pino.png">
-                </a>
+                <a (click)="onSelect(0)"><img id="m1-pino1" src="/assets/pino.png"></a>
+                <a (click)="onSelect(1)"><img id="m1-pino2" src="/assets/pino.png"></a>
+                <a (click)="onSelect(2)"><img id="m1-pino3" src="/assets/pino.png"></a>
+                <a (click)="onSelect(3)"><img id="m1-pino4" src="/assets/pino.png"></a>
+                <a (click)="onSelect(4)"><img id="m1-pino5" src="/assets/pino.png"></a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -26,7 +28,14 @@
         </div>
         <div id="box-mapa2" *ngIf="mapa2">
             <h1 class="titulo-mapa">Jornada Criativa</h1>
-            <img class="img-mapa" src="/assets/mapa-amarelo.png">
+            <img id="img-mapa2" src="/assets/mapa-amarelo.png">
+            <div class="mapa-pinos">
+                <a (click)="onSelect(5)"><img id="m2-pino1" src="/assets/pino.png"></a>
+                <a (click)="onSelect(6)"><img id="m2-pino2" src="/assets/pino.png"></a>
+                <a (click)="onSelect(7)"><img id="m2-pino3" src="/assets/pino.png"></a>
+                <a (click)="onSelect(8)"><img id="m2-pino4" src="/assets/pino.png"></a>
+                <a (click)="onSelect(9)"><img id="m2-pino5" src="/assets/pino.png"></a>
+            </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
                 <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
@@ -36,7 +45,14 @@
         </div>
         <div id="box-mapa3" *ngIf="mapa3">
             <h1 class="titulo-mapa">Àreas de Informática</h1>
-            <img class="img-mapa" src="/assets/mapa-rosa.png">
+            <img id="img-mapa3" src="/assets/mapa-rosa.png">
+            <div class="mapa-pinos">
+                <a (click)="onSelect(5)"><img id="m3-pino1" src="/assets/pino.png"></a>
+                <a (click)="onSelect(6)"><img id="m3-pino2" src="/assets/pino.png"></a>
+                <a (click)="onSelect(7)"><img id="m3-pino3" src="/assets/pino.png"></a>
+                <a (click)="onSelect(8)"><img id="m3-pino4" src="/assets/pino.png"></a>
+                <a (click)="onSelect(9)"><img id="m3-pino5" src="/assets/pino.png"></a>
+            </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
                 <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">
@@ -46,7 +62,14 @@
         </div>
         <div id="box-mapa4" *ngIf="mapa4">
             <h1 class="titulo-mapa">Buliçosas inspiradoras</h1>
-            <img class="img-mapa" src="/assets/mapa-azul.png">
+            <img id="img-mapa4" src="/assets/mapa-azul.png">
+            <div class="mapa-pinos">
+                <a (click)="onSelect(5)"><img id="m4-pino1" src="/assets/pino.png"></a>
+                <a (click)="onSelect(6)"><img id="m4-pino2" src="/assets/pino.png"></a>
+                <a (click)="onSelect(7)"><img id="m4-pino3" src="/assets/pino.png"></a>
+                <a (click)="onSelect(8)"><img id="m4-pino4" src="/assets/pino.png"></a>
+                <a (click)="onSelect(9)"><img id="m4-pino5" src="/assets/pino.png"></a>
+            </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
                 <input type="image" src="/assets/planeta-amarelo.png" id="bnt-mine-p2" (click)="mudarParaMapa2()">

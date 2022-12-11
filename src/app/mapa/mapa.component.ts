@@ -17,15 +17,15 @@ export class MapaComponent implements OnInit {
   tag1: boolean;
 
   constructor(private ts: TrilhasService, private router: Router) { 
-    this.menu = true;
+    this.menu = false;
     this.mapa1 = false;
     this.mapa2 = false;
     this.mapa3 = false;
-    this.mapa4 = false;
+    this.mapa4 = true;
     this.tag1 = true;
   }
 
-  public todosArt = ["1", "2"];
+  public todosArt = ["1", "2", "3", "4", "5","6","7","8","9", "10", "11", "12", "13", "14", "15", "16","17","18","9", "20"];
 
   onSelect(id:number){
     let a = this.todosArt;
