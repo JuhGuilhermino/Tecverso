@@ -13,11 +13,16 @@
             <h1 class="titulo-mapa">Introdução à Informática</h1>
             <img id="img-mapa1" src="/assets/mapa-rosinha.png">
             <div class="mapa-pinos">
-                <a (click)="onSelect(0)"><img id="m1-pino1" src="/assets/pino.png"></a>
-                <a (click)="onSelect(1)"><img id="m1-pino2" src="/assets/pino.png"></a>
-                <a (click)="onSelect(2)"><img id="m1-pino3" src="/assets/pino.png"></a>
-                <a (click)="onSelect(3)"><img id="m1-pino4" src="/assets/pino.png"></a>
-                <a (click)="onSelect(4)"><img id="m1-pino5" src="/assets/pino.png"></a>
+                <h1 class="nome-art" id="nome-art1" *ngIf="links[0]">O que é informática?</h1>
+                <a class="pinos" id="m1-pino1" (mouseover)="exibirLink(0)" (mouseleave)="exibirLink(0)" (click)="onSelect(0)"></a>
+                <h1 class="nome-art" id="nome-art2" *ngIf="links[1]">O que são aplicações?</h1>
+                <a class="pinos" id="m1-pino2" (mouseover)="exibirLink(1)" (mouseleave)="exibirLink(1)" (click)="onSelect(1)"></a>
+                <h1 class="nome-art" id="nome-art3" *ngIf="links[2]">Onde está a informática no mundo?</h1>
+                <a class="pinos" id="m1-pino3" (mouseover)="exibirLink(2)" (mouseleave)="exibirLink(2)" (click)="onSelect(2)"></a>
+                <h1 class="nome-art" id="nome-art4" *ngIf="links[3]">De que aplicações são feitas?</h1>
+                <a class="pinos" id="m1-pino4" (mouseover)="exibirLink(3)" (mouseleave)="exibirLink(3)" (click)="onSelect(3)"></a>
+                <h1 class="nome-art" id="nome-art5" *ngIf="links[4]">Mitos da Informática</h1>    
+                <a class="pinos" id="m1-pino5" (mouseover)="exibirLink(4)" (mouseleave)="exibirLink(4)" (click)="onSelect(4)"></a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -30,11 +35,16 @@
             <h1 class="titulo-mapa">Jornada Criativa</h1>
             <img id="img-mapa2" src="/assets/mapa-amarelo.png">
             <div class="mapa-pinos">
-                <a (click)="onSelect(5)"><img id="m2-pino1" src="/assets/pino.png"></a>
-                <a (click)="onSelect(6)"><img id="m2-pino2" src="/assets/pino.png"></a>
-                <a (click)="onSelect(7)"><img id="m2-pino3" src="/assets/pino.png"></a>
-                <a (click)="onSelect(8)"><img id="m2-pino4" src="/assets/pino.png"></a>
-                <a (click)="onSelect(9)"><img id="m2-pino5" src="/assets/pino.png"></a>
+                <h1 class="nome-art" id="nome-art6" *ngIf="links[5]">Importância da Ciência</h1>
+                <a class="pinos" id="m2-pino1" (mouseover)="exibirLink(5)" (mouseleave)="exibirLink(5)" (click)="onSelect(5)"></a>
+                <h1 class="nome-art" id="nome-art7" *ngIf="links[6]">Mitos da Ciência</h1>
+                <a class="pinos" id="m2-pino2" (mouseover)="exibirLink(6)" (mouseleave)="exibirLink(6)" (click)="onSelect(6)"></a>
+                <h1 class="nome-art" id="nome-art8" *ngIf="links[7]">Criatividade</h1>
+                <a class="pinos" id="m2-pino3" (mouseover)="exibirLink(7)" (mouseleave)="exibirLink(7)" (click)="onSelect(7)"></a>
+                <h1 class="nome-art" id="nome-art9" *ngIf="links[8]">Desenvolvendo Projetos, por quê?</h1>
+                <a class="pinos" id="m2-pino4" (mouseover)="exibirLink(8)" (mouseleave)="exibirLink(8)" (click)="onSelect(8)"></a>
+                <h1 class="nome-art" id="nome-art10" *ngIf="links[9]">Etapas da criação de um projeto</h1>    
+                <a class="pinos" id="m2-pino5" (mouseover)="exibirLink(9)" (mouseleave)="exibirLink(9)" (click)="onSelect(9)"></a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -47,11 +57,16 @@
             <h1 class="titulo-mapa">Àreas de Informática</h1>
             <img id="img-mapa3" src="/assets/mapa-rosa.png">
             <div class="mapa-pinos">
-                <a (click)="onSelect(5)"><img id="m3-pino1" src="/assets/pino.png"></a>
-                <a (click)="onSelect(6)"><img id="m3-pino2" src="/assets/pino.png"></a>
-                <a (click)="onSelect(7)"><img id="m3-pino3" src="/assets/pino.png"></a>
-                <a (click)="onSelect(8)"><img id="m3-pino4" src="/assets/pino.png"></a>
-                <a (click)="onSelect(9)"><img id="m3-pino5" src="/assets/pino.png"></a>
+                <h1 class="nome-art" id="nome-art11" *ngIf="links[10]">Desenvolvimento Web</h1>
+                <a class="pinos" id="m3-pino1" (mouseover)="exibirLink(10)" (mouseleave)="exibirLink(10)" (click)="onSelect(10)"></a>
+                <h1 class="nome-art" id="nome-art12" *ngIf="links[11]">Desenvolvimento de Jogos</h1>
+                <a class="pinos" id="m3-pino2" (mouseover)="exibirLink(11)" (mouseleave)="exibirLink(11)" (click)="onSelect(11)"></a>
+                <h1 class="nome-art" id="nome-art13" *ngIf="links[12]">Desenvolvimento Mobile</h1>
+                <a class="pinos" id="m3-pino3" (mouseover)="exibirLink(12)" (mouseleave)="exibirLink(12)" (click)="onSelect(12)"></a>
+                <h1 class="nome-art" id="nome-art14" *ngIf="links[13]">Data Science</h1>
+                <a class="pinos" id="m3-pino4" (mouseover)="exibirLink(13)" (mouseleave)="exibirLink(13)" (click)="onSelect(13)"></a>
+                <h1 class="nome-art" id="nome-art15" *ngIf="links[14]">Machine Learning</h1>    
+                <a class="pinos" id="m3-pino5" (mouseover)="exibirLink(14)" (mouseleave)="exibirLink(14)" (click)="onSelect(14)"></a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -64,11 +79,16 @@
             <h1 class="titulo-mapa">Buliçosas inspiradoras</h1>
             <img id="img-mapa4" src="/assets/mapa-azul.png">
             <div class="mapa-pinos">
-                <a (click)="onSelect(5)"><img id="m4-pino1" src="/assets/pino.png"></a>
-                <a (click)="onSelect(6)"><img id="m4-pino2" src="/assets/pino.png"></a>
-                <a (click)="onSelect(7)"><img id="m4-pino3" src="/assets/pino.png"></a>
-                <a (click)="onSelect(8)"><img id="m4-pino4" src="/assets/pino.png"></a>
-                <a (click)="onSelect(9)"><img id="m4-pino5" src="/assets/pino.png"></a>
+                <h1 class="nome-art" id="nome-art16" *ngIf="links[15]">Artigo1 Trilha4</h1>
+                <a class="pinos" id="m4-pino1" (mouseover)="exibirLink(15)" (mouseleave)="exibirLink(15)" (click)="onSelect(15)"></a>
+                <h1 class="nome-art" id="nome-art17" *ngIf="links[16]">Artigo2 Trilha4</h1>
+                <a class="pinos" id="m4-pino2" (mouseover)="exibirLink(16)" (mouseleave)="exibirLink(16)" (click)="onSelect(16)"></a>
+                <h1 class="nome-art" id="nome-art18" *ngIf="links[17]">Artigo3 Trilha4</h1>
+                <a class="pinos" id="m4-pino3" (mouseover)="exibirLink(17)" (mouseleave)="exibirLink(17)" (click)="onSelect(17)"></a>
+                <h1 class="nome-art" id="nome-art19" *ngIf="links[18]">Artigo4 Trilha4</h1>
+                <a class="pinos" id="m4-pino4" (mouseover)="exibirLink(18)" (mouseleave)="exibirLink(18)" (click)="onSelect(18)"></a>
+                <h1 class="nome-art" id="nome-art20" *ngIf="links[19]">Artigo5 Trilha4</h1>    
+                <a class="pinos" id="m4-pino5" (mouseover)="exibirLink(19)" (mouseleave)="exibirLink(19)" (click)="onSelect(19)"></a>
             </div>
             <div class="mini-menu-mapa">
                 <input type="image" src="/assets/planeta-rosinha.png" id="bnt-mine-p1" (click)="mudarParaMapa1()">
@@ -81,9 +101,9 @@
     <div id="legenda-mapa">
         <img src="/assets/Ada Normal.png">
         <p id="legenda-menu" *ngIf="menu"></p>
-        <p id="legenda-menu-mapa1" *ngIf="mapa1">REGISTRO: 9-12-1906  HOMENAGEM: Grace Hopper, almirante e analista de sistema da Marinha dos EUA <br> SOBRE: Primeiros passos no mundo da informática. O que é? Como começou? O que faz?</p>
-        <p id="legenda-menu-mapa2" *ngIf="mapa2">REGISTRO: xx - xx - xxxx     HOMENAGEM: Juliana Estradioto, e <br>Relação entre ciência e criatividade aliada ao desenvolvimento de projetos.</p>
-        <p id="legenda-menu-mapa3" *ngIf="mapa3">REGISTRO: xx - xx - xxxx     DESCOBRIDORA: xx - xx - xx <br>A área da informática é muito diversa. Descubra diferentes caminhos para seguir nesse universo.</p>
-        <p id="legenda-menu-mapa4" *ngIf="mapa4">REGISTRO: xx - xx - xxxx     DESCOBRIDORA: xx - xx - xx <br>Buliçosas inspiradoras. Quem são as mulheres que fazem parte da história da informática?</p>
+        <p id="legenda-menu-mapa1" *ngIf="mapa1"> Dê seus primeiros passos no mundo da informática. Entenda o que é a área, como ela começeou a se desenvolver.</p>
+        <p id="legenda-menu-mapa2" *ngIf="mapa2">Sabia que criatividade e ciência são grandes aliadas? Descubra como acontece essa conexão e como usa-la nos seus projetos.</p>
+        <p id="legenda-menu-mapa3" *ngIf="mapa3">Agora que você já sabe um pouco mais sobre o universo da informática, que tal explorar mais fundo e conhecer suas diferentes àreas?</p>
+        <p id="legenda-menu-mapa4" *ngIf="mapa4">Há muitas mulheres que mudaram a história com seu conhecimento. Conheça outras buliçosas, suas hitórias e como elas impactaram o mundo.</p>
     </div>      
 </section>

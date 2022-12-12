@@ -2,7 +2,6 @@
     <div class="box-apresentacao">
         <img class="ada-oi" src="/assets/ada-oi2.png">
         <div id="tela-chat">
-            <img id="logo-chat" src="/assets/MineAdaPink.png">
             <div id="chat-p1" *ngIf="chat1">
                 <p class="fala-ada">Oi meu nome é Ada. Seja bem vinda ao Tecverso!</p>
                 <p class="fala-ada">Preparada para iniciar a exploração?</p>
@@ -37,7 +36,7 @@
                 <div class="resp-box" *ngIf="resp1">
                     <p class="a">Escolha sua resposta:</p>
                     <input type="button" class="resp" value="Não sei por onde começar" (click)="exibirResp1A()">
-                    <input type="button" class="resp" value="Estou super empolgada" (click)="exibirResp1B()">
+                    <input type="button" class="resp" value="Estou superempolgada" (click)="exibirResp1B()">
                 </div>
                 <div class="resp-box" *ngIf="resp2">
                     <p class="a">Escolha sua resposta:</p>

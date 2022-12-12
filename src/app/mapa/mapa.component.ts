@@ -14,16 +14,16 @@ export class MapaComponent implements OnInit {
   mapa2: boolean;
   mapa3: boolean;
   mapa4: boolean;
-  tag1: boolean;
 
   constructor(private ts: TrilhasService, private router: Router) { 
-    this.menu = false;
+    this.menu = true;
     this.mapa1 = false;
     this.mapa2 = false;
     this.mapa3 = false;
-    this.mapa4 = true;
-    this.tag1 = true;
+    this.mapa4 = false;
   }
+
+  public links =[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
 
   public todosArt = ["1", "2", "3", "4", "5","6","7","8","9", "10", "11", "12", "13", "14", "15", "16","17","18","9", "20"];
 
@@ -35,6 +35,13 @@ export class MapaComponent implements OnInit {
   ngOnInit(): void { 
   }
 
+  exibirLink(i: number){
+    if (this.links[i] == false){
+      this.links[i] = true;
+    } else {
+      this.links[i] = false;
+    }
+  }
 
   mudarParaMapa1(){
     this.menu = false;
@@ -68,5 +75,4 @@ export class MapaComponent implements OnInit {
     this.mapa4 = true;
   }
 
-  mostrarTag1(){this.tag1=true}
 }

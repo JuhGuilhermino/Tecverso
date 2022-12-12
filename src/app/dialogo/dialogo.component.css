@@ -75,7 +75,7 @@
 }
 
 #interacao {
-    height: 10vh;
+    height: 8vh;
     width: 55vw;
     background: #D9D9D9;
     border: 1px solid #D9D9D9;
@@ -101,6 +101,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .resp{
@@ -113,6 +114,7 @@
     font-weight: 600;
     margin-right: 10px;
     border: none;
+
 }
 
 .resp:hover, .proximo:hover{
@@ -131,4 +133,17 @@
     text-transform: uppercase;
     border: none;
     margin-left: 25vw;
+}
+
+@media (max-width: 980px) {
+    .fala-ada, .fala-user {font-size: 16px;}
+    .ada-oi{height: 45vh;}
+    .resp-box {width: 35vw;}
+}
+
+@media (max-width: 777px) {
+    .ada-oi {display: none;}
+    #tela-chat {width: 60vw;}
+    #chat-p1, #chat-p2, #chat-p3 {width: 55vw;}
+    #interacao {width: 60vw;}
 }

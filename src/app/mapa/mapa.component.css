@@ -189,7 +189,7 @@
 #legenda-mapa p {
     width: 65vw;
     font-family: 'Source Code Pro';
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     color:#000000;
 }
@@ -202,39 +202,19 @@
     margin-top: 85px;
 }
 
-.titulo-tag{
-    font-family: 'Gemunu Libre';
-    font-size: 20px;
-    font-weight: 800;
-    color:#000000;
+.pinos {
+    height: 40px; 
+    width: 40px;
+    border: none; 
+    position: absolute;
+    background-image: url("/assets/pino.png");
 }
 
-.texto-tag{
-    font-family: 'Source Code Pro';
-    font-size: 14px;
-    font-weight: 600;
-    color:#000000;
-    text-align: center;
-}
-
-.bnt-tag{
-    font-family: 'Gemunu Libre';
-    font-size: 14px;
-    font-weight: 700;
-    color:#000000;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 10px;
-    padding: 5px;
-    background: rgba(255, 77, 77, 0.6);
-}
-
-.bnt-tag:hover{
+.pinos:hover {
     cursor: pointer;
-    background-color: #E34234;
+    background-image: url("/assets/pino2.png");
+    height: 40px;
 }
-
-#m1-pino1, #m1-pino2, #m1-pino3, #m1-pino4, #m1-pino5, #m2-pino1, #m2-pino2, #m2-pino3, #m2-pino4, #m2-pino5, #m3-pino1, #m3-pino2, #m3-pino3, #m3-pino4, #m3-pino5,#m4-pino1, #m4-pino2, #m4-pino3, #m4-pino4, #m4-pino5{position: absolute; height: 40px; border: none;}
 
 #m1-pino1{top: 7vh;left: 2vw;}
 #m1-pino2{top: 35vh;left: 10vw;}
@@ -242,11 +222,23 @@
 #m1-pino4{top: 30vh;left: 45vw;}
 #m1-pino5{top: 15vh;left: 65vw;}
 
+#nome-art1{top: 2vh;left: 5vw;}
+#nome-art2{top: 30vh;left: 13vw;}
+#nome-art3{top: 17vh;left: 35vw;}
+#nome-art4{top: 25vh;left: 48vw;}
+#nome-art5{top: 10vh;right: 10vw; border-bottom-right-radius: 0px; border-bottom-left-radius: 100px;}
+
 #m2-pino1{top: 12vh;left: 2vw;}
 #m2-pino2{top: 36vh;left: 9vw;}
 #m2-pino3{top: 4vh;left: 32vw;}
 #m2-pino4{top: 30vh;left: 45vw;}
 #m2-pino5{top: 15vh;left: 65vw;}
+
+#nome-art6{top: 7vh;left: 5vw;}
+#nome-art7{top: 31vh;left: 12vw;}
+#nome-art8{top: -1vh;left: 35vw;}
+#nome-art9{top: 25vh;left: 48vw;}
+#nome-art10{top: 10vh;right: 10vw; border-bottom-right-radius: 0px; border-bottom-left-radius: 100px;}
 
 #m3-pino1{top: 20vh;left: 2vw;}
 #m3-pino2{top: 36vh;left: 23vw;}
@@ -254,31 +246,38 @@
 #m3-pino4{top: 3vh;left: 50vw;}
 #m3-pino5{top: 15vh;left: 70vw;}
 
+#nome-art11{top: 15vh;left: 5vw;}
+#nome-art12{top: 31vh;left: 26vw;}
+#nome-art13{top: 5vh;left: 35vw;}
+#nome-art14{top: -2vh;left: 53vw;}
+#nome-art15{top: 10vh;right: 5vw; border-bottom-right-radius: 0px; border-bottom-left-radius: 100px;}
+
 #m4-pino1{top: 26vh;left: 2vw;}
 #m4-pino2{top: 36vh;left: 25vw;}
 #m4-pino3{top: 4vh;left: 34vw;}
 #m4-pino4{top: 25vh;left: 54vw;}
 #m4-pino5{top: 10vh;left: 68vw;}
 
-a:hover{cursor: pointer;}
+#nome-art16{top: 21vh;left: 5vw;}
+#nome-art17{top: 31vh;left: 28vw;}
+#nome-art18{top: -1vh;left: 37vw;}
+#nome-art19{top: 20vh; right: 21vw; border-bottom-right-radius: 0px; border-bottom-left-radius: 100px;}
+#nome-art20{top: 5vh;right: 7vw; border-bottom-right-radius: 0px; border-bottom-left-radius: 100px;}
 
-#m1-tag1{
-    top: -11vh;
-    left: 23vw;
+.nome-art {
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    font-weight: 600;
+    color:#f6f4f2;; 
+    text-align: center;
+    line-height: 0.8;
+    margin-top: 8px;
+    background-color:  rgba(0, 0, 0, 0.6);
+    width: 250px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: solid 1.5px #D9D9D9;
+    padding: 10px;
+    position: absolute;
 }
-
-#m1-tag1, #m1-tag2, #m1-tag3 {
-    height: 20vh;
-    width: 12vw;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    border-bottom-left-radius: 0;
-    padding: 5PX;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border: solid #000000 2px;
-    position: relative;
-}
-

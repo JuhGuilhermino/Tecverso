@@ -66,17 +66,17 @@
 #planeta-rosinha {height: 30vh;}
 
 @media (max-width: 900px) {
-    #planeta-amarelo {height: 30vh; left: 3vw;}
+    #planeta-amarelo {height: 25vh; left: 3vw;}
     #planeta-rosa {height: 20vh;}
     #planeta-azul {height: 28vh;}
     #lua {height: 10vh;}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     #planeta-amarelo {height: 20vh; left: 3vw;}
     #planeta-rosa {height: 15vh;}
     #planeta-rosinha {height: 25vh;}
-    #planeta-azul {height: 22vh;}
+    #planeta-azul {height: 20vh;}
     #lua {height: 8vh;}
 
     #titulo-capa {font-size: 70px;}
