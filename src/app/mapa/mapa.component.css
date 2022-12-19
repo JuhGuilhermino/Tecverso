@@ -45,14 +45,14 @@
 }
 
 #registro {grid-area: t; align-self: end; justify-self: baseline;}
-.subtitulo-mapa {grid-area: s; align-self: end; justify-self: end;}
+.subtitulo-mapa {grid-area: s; align-self: end; justify-self: center;}
 .subtitulo-mapa, #registro {
-    width: 50vw;
+    width: 55vw;
     font-family: 'Source Code Pro';
     font-size: 16px;
     font-weight: 400;
     color: #f6f4f2;
-    
+    text-align: center;
     margin-left: 40px;
 }
 
@@ -69,7 +69,7 @@
 }
 
 #bnt-p1 {
-    height: 25vh;
+    width: 13vw;
     background: transparent;
     grid-area: p1;
     align-self: center;
@@ -79,7 +79,7 @@
 }
 
 #bnt-p2 {
-    height: 40vh;
+    width: 21vw;
     background: transparent;
     grid-area: p2;
     align-self:center;
@@ -87,7 +87,7 @@
 }
 
 #bnt-p3 {
-    height: 35vh;
+    width: 19vw;
     background: transparent;
     grid-area: p3;
     align-self: center;
@@ -95,7 +95,7 @@
 }
 
 #bnt-p4 {
-    height: 25vh;
+    width: 14vw;
     background: transparent;
     grid-area: p4;
     align-self: center;
@@ -280,4 +280,12 @@
     border: solid 1.5px #D9D9D9;
     padding: 10px;
     position: absolute;
+}
+
+@media (max-width: 788px) {
+    #legenda-mapa p {font-size: 16px;}
+}
+
+@media (max-width: 680px) {
+    #legenda-mapa p {font-size: 15px;}
 }

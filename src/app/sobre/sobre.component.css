@@ -312,8 +312,7 @@
 }
 
 .img-criadora{
-    height: 200px;
-    width: 200px;
+    width: 15vw;
     border: 2px solid #D9D9D9;
     border-radius: 10px;
     margin-top: 3vh;
@@ -329,3 +328,51 @@
     margin-top: 3vh;
     text-align: justify;
 }
+
+@media (max-width: 855px) {
+   .box-nome {font-size: 18px;}
+   .sobre-criadora {font-size: 14px;}
+}
+
+@media (max-width: 735px) {
+    #container{
+        flex-direction: column;
+    }
+    
+    .box-criadoras{
+        height: 25vh;
+        width: 65vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 5fr;
+        grid-area: 
+            "n n", 
+            "i s";
+        justify-content: baseline;
+        align-items: center;
+    }
+    
+    .box-nome{
+        width: 65vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        grid-area: n;
+        margin-top: -24vh;
+    }
+    
+    .img-criadora{
+        width: 15vw;
+        grid-area: i;
+        margin-left: 2vw;
+    }
+    
+    .sobre-criadora{
+        grid-area: s;
+        height: 16vh;
+        width: 40vw;
+        margin-top: 3vh;
+        margin-left: 24vw;
+    }
+ }

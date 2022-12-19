@@ -19,7 +19,6 @@
 }
 
 #box-titulo {
-    height: 35vh;
     width: 50vw;
     background: rgba(0, 0, 0, 0.6);
     border: 2px solid #D9D9D9;
@@ -38,7 +37,7 @@
 
 #titulo-artigo {
     font-family: 'Gemunu Libre';
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 800;
     color: #f6f4f2;
     width: 50vw;
@@ -248,7 +247,7 @@
     grid-area: img; 
     background-color: #D9D9D9;
     align-self: center;
-    height: 80px;
+    height: 50px;
     border-radius: 100px;
     padding: 10px;
 }
@@ -261,15 +260,18 @@
     text-align: justify;
     text-transform: uppercase;
     grid-area: h;
+    text-align: center;
+    width: 15vw;
 }
 
 .ind-desc {
     font-family: 'Source Code Pro';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: #f6f4f2;
-    text-align: justify;
+    text-align: center;
     grid-area: t;
+    width: 14vw;
 }
 
 .bnt-ind {
@@ -293,3 +295,7 @@
     background-color: #D9D9D9;
     color: #12107D;
 }
+
+@media (max-width: 735px){
+
+};
